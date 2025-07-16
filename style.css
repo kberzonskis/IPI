@@ -38,7 +38,7 @@ td{}
 
 th {
   text-transform: uppercase;
-  background-color: #000;
+  background-color: #ad4a4a;
 }
 td:nth-child(5) {
   text-align: right;
@@ -71,6 +71,9 @@ tbody tr:hover {
   display: none;
 }
 
+#villains-row td { 
+  background-color: aqua;
+}
 
 
 

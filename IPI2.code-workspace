@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "IPI",
+			"path": "."
+		},
+		{
+			"name": "fonts",
+			"path": "../../Gridas/fonts"
+		}
+	],
+	"settings": {}
+}
