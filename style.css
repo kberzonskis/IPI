@@ -1,6 +1,6 @@
  @font-face {
-  font-family: "Horror";
-  src: url(./BloodyTerror.ttf);
+  font-family: florisa;
+  src: url(./FlorisaPersonalUse-nRm84.otf);
 }
  
  *{ margin: 0;
@@ -9,7 +9,12 @@
     
 }   
    
-body { background-color: rgb(112, 165, 42);}
+h1 { 
+  font-family: florisa;
+}
+
+
+body { background-color: rgb(115, 0, 255);}
 
 
 header , footer { 
@@ -17,28 +22,29 @@ header , footer {
     text-align: center;
 }
 
-tr:nth-child(odd) td{ background-color: rgb(43, 134, 226);
 
-}
 
 table {
    /* border-collapse: collapse; */ 
    border-spacing: 0;
    margin: 0 20px;
 }
-tr { background-color: blue;}
 
-tr:nth-child(:odd) { background-color: #333;}
 
-th,td{ border: 1px solid chartreuse; 
+tr:nth-child(even) { background-color: #abdb19;}
+tr:nth-child(odd) {background-color: hsl(83, 79%, 46%);
+  
+}
+
+
+th,td{ border: 1px solid rgb(30, 240, 247); 
 
 padding: 5px 7px; }
 
-td{}
 
 th {
   text-transform: uppercase;
-  background-color: #ad4a4a;
+  background-color: #35c533;
 }
 td:nth-child(5) {
   text-align: right;
@@ -46,8 +52,9 @@ td:nth-child(5) {
 tbody tr {
   transition: all 150ms;
 }
+
 tbody tr:hover {
-  background-color: #57c915;
+  background-color: #0cec57;
 }
 
 /* Loader */
@@ -59,7 +66,7 @@ tbody tr:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: monospace;
+  font-family: florisa;
   font-size: 1.5rem;
   display: none;
 }
@@ -72,65 +79,53 @@ tbody tr:hover {
 }
 
 #villains-row td { 
-  background-color: aqua;
+  background-color: rgb(224, 203, 15);
 }
+
+#modal { 
+  background-color: rgb(211, 115, 213);
+  padding: 50px;
+  padding-top: 60px;
+  position: relative;
+  
+}
+.close-modal { 
+  position: absolute;
+ top: 10px;
+ right: 20px;
+ font-size: 2rem;
+ background-color: rgb(229, 83, 15);
+ line-height: 1;
+ padding: 5px 8px;
+ padding-top: 0;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: all 200ms;
+}
+
+.close-modal:hover { 
+
+  transform: scale(1.1) ;
+}
+
+#modal ul { 
+
+  list-style: none;
+  
+}
+
+#blur-bg { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100wh;
+  height: 100wh;
+  backdrop-filter: blur 5px;
 
 
 
 
-
-
-    /*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-
-body {
-  background-color: #111;
-  color: #ccc;
-}
-
-header,
-footer {
-  padding: 4rem;
-  text-align: center;
-}
-
-/* TABLE */
-/*
-table {
-  /* border-collapse: collapse; */
-  /*
-  border-spacing: 0;
-  margin: 0 20px;
-}
-tr:nth-child(even) {
-  background-color: hsl(348, 86%, 24%);
-}
-tr:nth-child(odd) {
-  background-color: hsl(348, 86%, 18%);
-}
-th,
-td {
-  padding: 5px 7px;
-  border-top: 1px solid hsl(348, 86%, 32%);
-  border-right: 1px solid hsl(348, 86%, 10%);
-  border-bottom: 1px solid hsl(348, 86%, 10%);
-  border-left: 1px solid hsl(348, 86%, 32%);
-}
-th {
-  text-transform: uppercase;
-  background-color: #000;
-}
-td:nth-child(5) {
-  text-align: right;
-}
-tbody tr {
-  transition: all 150ms;
-}
-tbody tr:hover {
-  background-color: #000;
-}
-
